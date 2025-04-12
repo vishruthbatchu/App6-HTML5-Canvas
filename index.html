@@ -68,8 +68,48 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Content goes here.</p>
+<!--dimensions of my canvas-->
+	<canvas id="myCanvas" width="300" height="325"></canvas>
+<!-- code that is setting my functions -->
+	<div class="button-container">
+		<button onclick="DrawRectangle()">Draw Rectangle</button>
+		<button onclick="DrawName()">Draw Name</button>
+		<button onclick="DrawImage()">Load Image</button>
+		<button onclick="ClearCanvas()">Clear Canvas</button>
+	</div>
+
+<!-- I made the following code to explain how accomplish various tasks, such as making the canvas, filling it in, drawing a rectantgle, drawing a name, displaying images, and clearing the canvas -->
+	<script>
+ //Rectangle
+	var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+	function DrawRectangle() {
+            ctx.fillStyle = "green";
+            ctx.fillRect(50, 50, 200, 100);
+        }
+//Name 
+	function DrawName() {
+		ctx.font = "20px Arial";
+		ctx.fillStyle = "blue";
+		ctx.fillText("Vishruth", 100, 200) //dimensions of where name will be on canvas//
+	}
+//Image
+	function DrawImage() {
+		var img = new Image();
+		img.src = "
 		
+
+ 
+
+ 
+	
+	
+	
+	
+	
+	
+	
+	<!--tells users what this code is for-->	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
