@@ -61,9 +61,9 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     z-index: 1;
 }
 canvas {
-	border: 3px solid black;
-	display: block;
-	margin: auto;
+	border: 3px solid black;  /* Canvas border thickness and color*/
+	display: block;        /* border display */
+	margin: auto;         /* margin */
    }
 
 </style>
@@ -103,13 +103,13 @@ canvas {
 //Image
 	function DrawImage() {               //button that loads image onto canvas//
 		var img = new Image();
-		img.src = "VishruthBatchu JPEG.jpg";
+		img.src = "VishruthBatchu JPEG.jpg";  //source of my image in my repositiory//
 		img.onload = function() {
 			ctx.drawImage(img, 50, 50, 200, 100);     //where the image will be placed on the canvas//
 		}
 	}
 //Clear Image//
-	function ClearCanvas() {                    //clears canvas//
+	function ClearCanvas() {                    //this clears canvas//
 		ctx.clearRect(0, 0, 300, 300);
 	}
 		
@@ -126,3 +126,5 @@ canvas {
 
 </body>
 </html>
+
+<!--THE END. Some sources I used to help me with this code were the videos in canvas, youtube, and Chat GPT. GPT helped me with displaying my image and creating a border for my canvas.-->
