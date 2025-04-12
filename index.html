@@ -96,8 +96,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	}
 //Image
 	function DrawImage() {               //button that loads image onto canvas//
-		var img = new Image();
-		img.src = "Vishruth Batchu JPEG.jpg";
+		const img = new Image();
+		img.src = "VishruthBatchu JPEG.jpg";
 		img.onload = function() {
 			ctx.drawImage(img, 75, 75, 150, 150);     //where the image will be placed on the canvas//
 		}
