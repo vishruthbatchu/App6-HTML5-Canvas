@@ -85,25 +85,25 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 	
 	//Rectangle
 	function DrawRectangle() {
-            ctx.fillStyle = "green";
-            ctx.fillRect(50, 50, 200, 100);
+            ctx.fillStyle = "green";        //fills in rectangle green//
+            ctx.fillRect(50, 50, 200, 100);   //rectangle position on canvas//
         }
 //Name 
 	function DrawName() {
-		ctx.font = "20px Arial";
-		ctx.fillStyle = "blue";
-		ctx.fillText("Vishruth", 100, 200); //dimensions of where name will be on canvas//
+		ctx.font = "20px Arial";    //font//
+		ctx.fillStyle = "blue";     //name is filled in blue//
+		ctx.fillText("Vishruth", 100, 200); //dimensions of where name will be on canvas, as well as what name is//
 	}
 //Image
-	function DrawImage() {
+	function DrawImage() {               //button that loads image onto canvas//
 		var img = new Image();
 		img.src = "Vishruth Batchu JPEG.jpg";
 		img.onload = function() {
-			ctx.drawImage(img, 75, 75, 150, 150);
+			ctx.drawImage(img, 75, 75, 150, 150);     //where the image will be placed on the canvas//
 		}
 	}
 //Clear Image//
-	function ClearCanvas() {
+	function ClearCanvas() {                    //clears canvas//
 		ctx.clearRect(0, 0, 300, 300);
 	}
 		
